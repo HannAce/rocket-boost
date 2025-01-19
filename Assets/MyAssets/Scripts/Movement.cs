@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private InputAction m_rotation;
     
     [SerializeField] private float m_thrustSpeed;
+    [SerializeField] private float m_rotationSpeed;
 
     private void OnEnable()
     {
@@ -37,7 +38,7 @@ public class Movement : MonoBehaviour
             float rotationInput = m_rotation.ReadValue<float>();
             if (rotationInput != 0)
             {
-                transform.Rotate(0, 0, -rotationInput); 
+                transform.Rotate(0f, 0f, -rotationInput * m_rotationSpeed * Time.fixedDeltaTime); 
             }
             
             Debug.Log(rotationInput);

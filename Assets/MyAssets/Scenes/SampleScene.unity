@@ -512,6 +512,10 @@ PrefabInstance:
       value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 7976998509038017717, guid: 5680d98360d1f9c48b3fa3de343af58c, type: 3}
+      propertyPath: m_rotationSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976998509038017717, guid: 5680d98360d1f9c48b3fa3de343af58c, type: 3}
       propertyPath: m_rotation.m_SingletonActionBindings.Array.data[3].m_Path
       value: <Keyboard>/a
       objectReference: {fileID: 0}
